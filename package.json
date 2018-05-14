@@ -1,11 +1,12 @@
 {
   "name": "react-example-project",
   "version": "1.0.0",
-  "description": "An example of a basic react project for students of Founders and Coders",
+  "description":
+    "An example of a basic react project for students of Founders and Coders",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html"
+    "start": "parcel ./src/index.html"
   },
   "repository": {
     "type": "git",
