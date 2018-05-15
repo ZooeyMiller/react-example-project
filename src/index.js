@@ -62,6 +62,35 @@ const toggleDrakeDisplay = (drakes, drakeToToggle) => {
   ];
 };
 
+const BASE_URL = "https://api.github.com";
+
+const getUser = username => {
+  const URL = `${BASE_URL}/users/${username}`;
+  return fetch(URL) // eslint-disable-line no-undef
+    .then(res => {
+      if (res.status !== 200) {
+        throw new Error("Non-200 API response");
+      }
+      return res.json();
+    });
+};
+
+const AddDrake = props => (
+  <form onSubmit={props.onSubmit}>
+    <label htmlFor="add-drake">
+      Add a Drake
+      <input
+        id="add-drake"
+        name="github-username"
+        placeholder="github username..."
+        onChange={props.handleChange}
+        value={props["github-username"]}
+      />
+    </label>
+    <button>go</button>
+  </form>
+);
+
 class App extends Component {
   state = { drakes, height: 600, width: 600 };
 
@@ -81,6 +110,12 @@ class App extends Component {
         <DrakeButtons
           drakes={this.state.drakes}
           onClick={this.handleDrakeClick}
+        />
+        <AddDrake
+          onSubmit={e => {
+            e.preventDefault();
+            console.log(e);
+          }}
         />
       </Fragment>
     );
