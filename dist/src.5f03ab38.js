@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({13:[function(require,module,exports) {
+})({18:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -189,7 +189,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],14:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -243,7 +243,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],15:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -261,7 +261,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],17:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -298,7 +298,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],16:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -361,7 +361,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":17}],25:[function(require,module,exports) {
+},{"./emptyFunction":22}],30:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -375,7 +375,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],18:[function(require,module,exports) {
+},{}],23:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -435,7 +435,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":14,"fbjs/lib/warning":16,"./lib/ReactPropTypesSecret":25}],11:[function(require,module,exports) {
+},{"fbjs/lib/invariant":21,"fbjs/lib/warning":20,"./lib/ReactPropTypesSecret":30}],11:[function(require,module,exports) {
 /** @license React v16.3.2
  * react.development.js
  *
@@ -1844,7 +1844,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":13,"fbjs/lib/invariant":14,"fbjs/lib/emptyObject":15,"fbjs/lib/warning":16,"fbjs/lib/emptyFunction":17,"prop-types/checkPropTypes":18}],8:[function(require,module,exports) {
+},{"object-assign":18,"fbjs/lib/invariant":21,"fbjs/lib/emptyObject":19,"fbjs/lib/warning":20,"fbjs/lib/emptyFunction":22,"prop-types/checkPropTypes":23}],9:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1852,7 +1852,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.development.js":11}],19:[function(require,module,exports) {
+},{"./cjs/react.development.js":11}],24:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1886,7 +1886,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],20:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1923,7 +1923,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],21:[function(require,module,exports) {
+},{}],26:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1989,7 +1989,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],29:[function(require,module,exports) {
+},{}],34:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2012,7 +2012,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],26:[function(require,module,exports) {
+},{}],32:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2035,7 +2035,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":29}],22:[function(require,module,exports) {
+},{"./isNode":34}],27:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2073,7 +2073,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":26}],27:[function(require,module,exports) {
+},{"./isTextNode":32}],31:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2104,7 +2104,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],23:[function(require,module,exports) {
+},{}],28:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2141,7 +2141,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":27}],28:[function(require,module,exports) {
+},{"./hyphenate":31}],33:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2171,7 +2171,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],24:[function(require,module,exports) {
+},{}],29:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2209,7 +2209,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":28}],12:[function(require,module,exports) {
+},{"./camelize":33}],12:[function(require,module,exports) {
 /** @license React v16.3.2
  * react-dom.development.js
  *
@@ -18827,7 +18827,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"fbjs/lib/invariant":14,"react":8,"fbjs/lib/warning":16,"fbjs/lib/ExecutionEnvironment":19,"object-assign":13,"fbjs/lib/emptyFunction":17,"prop-types/checkPropTypes":18,"fbjs/lib/getActiveElement":20,"fbjs/lib/shallowEqual":21,"fbjs/lib/containsNode":22,"fbjs/lib/emptyObject":15,"fbjs/lib/hyphenateStyleName":23,"fbjs/lib/camelizeStyleName":24}],9:[function(require,module,exports) {
+},{"fbjs/lib/invariant":21,"react":9,"fbjs/lib/warning":20,"fbjs/lib/ExecutionEnvironment":24,"object-assign":18,"fbjs/lib/emptyFunction":22,"prop-types/checkPropTypes":23,"fbjs/lib/getActiveElement":25,"fbjs/lib/shallowEqual":26,"fbjs/lib/containsNode":27,"fbjs/lib/emptyObject":19,"fbjs/lib/hyphenateStyleName":28,"fbjs/lib/camelizeStyleName":29}],10:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -18863,18 +18863,18 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":12}],30:[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":12}],13:[function(require,module,exports) {
 module.exports="/different-drake.6ec02c57.png";
-},{}],31:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 module.exports="/drake-creepy.cda9e996.png";
-},{}],32:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 module.exports="/happy-drake.638e1aea.png";
-},{}],33:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 module.exports="/happy-drake-2.28b50102.png";
-},{}],34:[function(require,module,exports) {
+},{}],17:[function(require,module,exports) {
 module.exports="/idk-drake.a5459a7e.png";
 },{}],7:[function(require,module,exports) {
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -18882,49 +18882,57 @@ Object.defineProperty(exports, "__esModule", {
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
-var _differentDrake = require('./assets/different-drake.png');
+var _differentDrake = require("./assets/different-drake.png");
 
 var _differentDrake2 = _interopRequireDefault(_differentDrake);
 
-var _drakeCreepy = require('./assets/drake-creepy.png');
+var _drakeCreepy = require("./assets/drake-creepy.png");
 
 var _drakeCreepy2 = _interopRequireDefault(_drakeCreepy);
 
-var _happyDrake = require('./assets/happy-drake.png');
+var _happyDrake = require("./assets/happy-drake.png");
 
 var _happyDrake2 = _interopRequireDefault(_happyDrake);
 
-var _happyDrake3 = require('./assets/happy-drake-2.png');
+var _happyDrake3 = require("./assets/happy-drake-2.png");
 
 var _happyDrake4 = _interopRequireDefault(_happyDrake3);
 
-var _idkDrake = require('./assets/idk-drake.png');
+var _idkDrake = require("./assets/idk-drake.png");
 
 var _idkDrake2 = _interopRequireDefault(_idkDrake);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var camelCaseToSpaces = function camelCaseToSpaces(string) {
-  return string.split('').reduce(function (acc, el) {
-    return acc + (el === el.toUpperCase() ? ' ' + el.toLowerCase() : el);
+  return string.split("").reduce(function (acc, el) {
+    return acc + (el === el.toUpperCase() ? " " + el.toLowerCase() : el);
   });
 };
 
-var drakes = [['differentDrake', _differentDrake2.default, 100, 200], ['creepyDrake', _drakeCreepy2.default, 250, 500], ['happyDrake', _happyDrake2.default, 400, 320], ['happyDrakeTwo', _happyDrake4.default, 500, 400], ['idkDrake', _idkDrake2.default, 200, 300]].map(function (_ref) {
+var drakes = [["differentDrake", _differentDrake2.default, 100, 200], ["creepyDrake", _drakeCreepy2.default, 250, 500], ["happyDrake", _happyDrake2.default, 400, 320], ["happyDrakeTwo", _happyDrake4.default, 500, 400], ["idkDrake", _idkDrake2.default, 200, 300]].map(function (_ref) {
   var _ref2 = _slicedToArray(_ref, 4),
       name = _ref2[0],
       src = _ref2[1],
       x = _ref2[2],
       y = _ref2[3];
 
-  return { name: camelCaseToSpaces(name), src: src, x: x, y: y };
+  return {
+    name: camelCaseToSpaces(name),
+    src: src,
+    x: x,
+    y: y,
+    display: false
+  };
 });
 
 exports.default = drakes;
-},{"./assets/different-drake.png":30,"./assets/drake-creepy.png":31,"./assets/happy-drake.png":32,"./assets/happy-drake-2.png":33,"./assets/idk-drake.png":34}],3:[function(require,module,exports) {
+},{"./assets/different-drake.png":13,"./assets/drake-creepy.png":14,"./assets/happy-drake.png":15,"./assets/happy-drake-2.png":16,"./assets/idk-drake.png":17}],3:[function(require,module,exports) {
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _react = require('react');
 
@@ -18937,6 +18945,8 @@ var _drakes = require('./drakes');
 var _drakes2 = _interopRequireDefault(_drakes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -18978,30 +18988,98 @@ var Drakes = function Drakes(_ref2) {
     var name = _ref3.name,
         src = _ref3.src,
         x = _ref3.x,
-        y = _ref3.y;
-    return [].concat(_toConsumableArray(acc), [_react2.default.createElement(Drake, {
+        y = _ref3.y,
+        display = _ref3.display,
+        _ref3$className = _ref3.className,
+        className = _ref3$className === undefined ? '' : _ref3$className;
+    return display ? [].concat(_toConsumableArray(acc), [_react2.default.createElement(Drake, {
       src: src,
       name: name,
       x: x,
       y: y,
       key: name + x,
-      className: getAnimationClass(i)
+      className: getAnimationClass(i) + className
     }), _react2.default.createElement(Drake, {
       src: src,
       name: name,
       x: y - 75,
       y: x,
       key: name + y,
-      className: getAnimationClass(i + 1)
-    })]);
+      className: getAnimationClass(i + 1) + className
+    })]) : acc;
   }, []);
+};
+
+var DrakeButtons = function DrakeButtons(_ref4) {
+  var drakes = _ref4.drakes,
+      onClick = _ref4.onClick;
+  return _react2.default.createElement(
+    'div',
+    { className: 'button-container' },
+    drakes.map(function (drake) {
+      return _react2.default.createElement(
+        'button',
+        { onClick: onClick(drake) },
+        drake.name
+      );
+    })
+  );
+};
+
+var findDrakeIndex = function findDrakeIndex(drakes, _ref5) {
+  var nameToFind = _ref5.name;
+  return drakes.findIndex(function (_ref6) {
+    var name = _ref6.name;
+    return name === nameToFind;
+  });
+};
+
+var toggleDrakeDisplay = function toggleDrakeDisplay(drakes, drakeToToggle) {
+  var index = findDrakeIndex(drakes, drakeToToggle);
+  return [].concat(_toConsumableArray(drakes.slice(0, index)), [_extends({}, drakeToToggle, { display: !drakeToToggle.display })], _toConsumableArray(drakes.slice(index + 1)));
+};
+
+var BASE_URL = 'https://api.github.com';
+
+var getUser = function getUser(username) {
+  var URL = BASE_URL + '/users/' + username;
+  return fetch(URL).then(function (res) {
+    if (res.status !== 200) {
+      throw new Error('Non-200 API response');
+    }
+    return res.json();
+  });
+};
+
+var AddDrake = function AddDrake(props) {
+  return _react2.default.createElement(
+    'form',
+    { onSubmit: props.onSubmit },
+    _react2.default.createElement(
+      'label',
+      { htmlFor: 'add-drake' },
+      'Add a Drake:',
+      _react2.default.createElement('input', {
+        id: 'add-drake',
+        name: 'githubUsername',
+        placeholder: 'github username...',
+        onChange: props.onChange,
+        value: props.name
+      })
+    ),
+    _react2.default.createElement(
+      'button',
+      null,
+      'go'
+    )
+  );
 };
 
 var App = function (_Component) {
   _inherits(App, _Component);
 
   function App() {
-    var _ref4;
+    var _ref7;
 
     var _temp, _this, _ret;
 
@@ -19011,25 +19089,66 @@ var App = function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref4 = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref4, [this].concat(args))), _this), _this.state = { drakes: _drakes2.default, height: 600, width: 600 }, _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref7 = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref7, [this].concat(args))), _this), _this.state = { drakes: _drakes2.default }, _this.handleDrakeClick = function (drake) {
+      return function () {
+        _this.setState({
+          drakes: toggleDrakeDisplay(_this.state.drakes, drake)
+        });
+      };
+    }, _this.handleChange = function (_ref8) {
+      var _ref8$target = _ref8.target,
+          value = _ref8$target.value,
+          name = _ref8$target.name;
+      return _this.setState(_defineProperty({}, name, value));
+    }, _this.handleSubmit = function (e) {
+      e.preventDefault();
+      getUser(_this.state.githubUsername).then(function (_ref9) {
+        var login = _ref9.login,
+            avatar_url = _ref9.avatar_url;
+
+        var userDrake = {
+          name: login,
+          src: avatar_url,
+          x: randomWithin(600),
+          y: randomWithin(600),
+          className: ' userDrake',
+          display: true
+        };
+        _this.setState({
+          drakes: [].concat(_toConsumableArray(_this.state.drakes), [userDrake]),
+          githubUsername: ''
+        });
+      }).catch(function (e) {
+        alert('sorry something went wrong probably a wrong github username or something idk');
+      });
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(App, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        _react.Fragment,
-        null,
+        'div',
+        { 'class': 'page-container' },
         _react2.default.createElement(
           'h1',
           null,
           'fuckin yolo'
         ),
+        _react2.default.createElement(AddDrake, {
+          onSubmit: this.handleSubmit,
+          onChange: this.handleChange,
+          name: this.state.githubUsername
+        }),
         _react2.default.createElement(
           'div',
           { className: 'drake-container' },
           _react2.default.createElement(Drakes, { drakes: this.state.drakes })
-        )
+        ),
+        _react2.default.createElement(DrakeButtons, {
+          drakes: this.state.drakes,
+          onClick: this.handleDrakeClick
+        })
       );
     }
   }]);
@@ -19038,7 +19157,7 @@ var App = function (_Component) {
 }(_react.Component);
 
 (0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('root'));
-},{"react":8,"react-dom":9,"./drakes":7}],38:[function(require,module,exports) {
+},{"react":9,"react-dom":10,"./drakes":7}],38:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -19067,7 +19186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '34929' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '46561' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

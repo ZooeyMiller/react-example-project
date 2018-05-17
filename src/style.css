@@ -1,3 +1,7 @@
+:root {
+  font-family: helvetica;
+}
+
 .drake-container {
   position: relative;
   background-color: palevioletred;
@@ -10,6 +14,10 @@
   position: absolute;
   height: 100px;
   width: 100px;
+}
+
+.userDrake {
+  border-radius: 100%;
 }
 
 .drake-wobble {
@@ -49,4 +57,26 @@
   to {
     transform: translateY(-10px);
   }
+}
+
+.button-container {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 50px;
+  border: solid 2px palevioletred;
+  margin: 5px;
+}
+
+.page-container {
+  width: 600px;
+  margin: 0 auto;
 }
