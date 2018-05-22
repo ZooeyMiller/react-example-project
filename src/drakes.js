@@ -12,11 +12,11 @@ const camelCaseToSpaces = string =>
     );
 
 const drakes = [
-  ["differentDrake", differentDrake, 100, 200],
+  ["differentDrake", differentDrake, 50, 200],
   ["creepyDrake", creepyDrake, 250, 500],
-  ["happyDrake", happyDrake, 400, 320],
-  ["happyDrakeTwo", happyDrakeTwo, 500, 400],
-  ["idkDrake", idkDrake, 200, 300]
+  ["happyDrake", happyDrake, 200, 320],
+  ["happyDrakeTwo", happyDrakeTwo, 100, 500],
+  ["idkDrake", idkDrake, 500, 100]
 ].map(([name, src, x, y]) => ({
   name: camelCaseToSpaces(name),
   src,
