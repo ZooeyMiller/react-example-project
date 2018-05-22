@@ -1,5 +1,6 @@
 import React from "react";
 
+const TEST_ID = "drake";
 const Drake = ({ name, src, x, y, className = "" }) => (
   <img
     src={src}
@@ -9,7 +10,8 @@ const Drake = ({ name, src, x, y, className = "" }) => (
       left: y
     }}
     className={`drake ${className}`}
+    data-testid={TEST_ID}
   />
 );
 
-export default Drake;
+export { Drake as default, TEST_ID };
