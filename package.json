@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel ./src/index.html",
     "test": "jest --watch",
-    "build": "parcel build ./src/index.html --public-url ./"
+    "build": "parcel build ./src/index.html"
   },
   "repository": {
     "type": "git",
